@@ -28,10 +28,12 @@ The numerical simulations demonstrate the control performance of the FTFOSMC und
 
 ```markdown
 /Result
-├── CosseratFTFOSMC\_modelerror.mat  # Model error simulation results
-├── CosseratFTFOSMC.mat            # Default simulation results
-├── CosseratFTFOSMC\_F001.mat       # Response with specific fault condition (F001)
-├── CosseratFTFOSMC\_F005.mat       # Response with another fault condition (F005)
+├── CosseratFTFOSMC_modelerror.mat  # Model error and boundary error simulation results
+├── CosseratFTFOSMC.mat            # boundary error simulation results
+├── CosseratFTFOSMC_F001.mat       # Response with specific fractional order (0.01)
+├── CosseratFTFOSMC_F005.mat       # Response with specific fractional order (0.05)
+├── CosseratFTFOSMC_F01.mat       # Response with specific fractional order (0.1)
+├── CosseratFTNOFTSMC.mat		   # Response without error
 CantileverRodFTFOSMC.m               # Main MATLAB script implementing the controller
 README.md                           # Documentation for the repository
 ```
@@ -39,13 +41,6 @@ README.md                           # Documentation for the repository
 ### Key MATLAB Functions
 
 - **CantileverRodFTFOSMC.m**: This is the main script where the control system is implemented. It uses the Cosserat rod model and applies the fractional order sliding mode control to the soft continuum manipulator.
-
-- **Simulation Files (`.mat`)**: These files contain the results of the simulations under different conditions (e.g., with model errors, boundary disturbances, or fault conditions). These data files can be loaded into MATLAB for further analysis or visualization.
-
-### Data Description
-
-- **CosseratFTFOSMC_modelerror.mat**: Contains the simulation results under model errors.
-- **CosseratFTFOSMC_F001.mat** and **CosseratFTFOSMC_F005.mat**: Contain the simulation results under specific fault conditions (`F001`, `F005`).
 
 ## Installation
 
